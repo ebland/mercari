@@ -46,8 +46,8 @@ public function getIP(){
  	$client_ip = self::getIP();
 	$timeBannerRuns =  self::getDuration(); 
 
- 	$allowedIsAdded0 = '10.0.0.4';
-	$allowedIsAdded1 = '10.4.4.4';
+ 	$allowedIsAdded0 = '10.0.0.1';
+	$allowedIsAdded1 = '10.0.0.2';
 
 	if($client_ip == $allowedIsAdded0 || $client_ip == $allowedIsAdded1 ){
 		$data['image'] =  '<img src="images/banner.jpg" class="img">';

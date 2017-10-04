@@ -12,11 +12,15 @@
 		 $.ajax({
         url: "index.php",
         type: "get",
-        success: function (response) {  
-          if(response.image!=''){             
+        success: function (response) { 
+
+        console.log(response);
+
+        if(response.image!=''){             
         	$('#mercariImage').html(response.image);
-         }
-         if(response.timeBannerRuns!=''){      
+        }
+        
+        if(response.timeBannerRuns!=''){      
 	         var miliseconds = response.timeBannerRuns; 
 		      setTimeout(function(){
 				       $('#bannerImg').hide();
